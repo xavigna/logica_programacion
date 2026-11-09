@@ -35,6 +35,26 @@ public class areglos {
          asistencia[i] = IO.readln("presente o ausente").equals("presente");
         }
 
+        int asistencias = 0;
+        int faltas = 0;
+
+        for (int i = 0; i < asistencia.length; i++) {
+            if (asistencia[i]) {
+                asistencias++;
+            } else {
+                faltas++;
+            }
+        }
+
+IO.println("Total de asistencias: " + asistencias);
+IO.println("Total de faltas: " + faltas);
+
+for (int i = 0; i < asistencia.length; i++) {
+    if (!asistencia[i]) {    
+
+        IO.println(alumnos[i]);    
     }
 
+}
+    }
 }
